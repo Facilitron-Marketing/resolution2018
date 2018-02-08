@@ -1,0 +1,180 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://use.typekit.net/jju5hiq.css");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after {
+  content: '';
+  content: none; }
+
+a:any-link {
+  text-decoration: none; }
+
+q:before, q:after {
+  content: '';
+  content: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+/* Setup */
+html {
+  /* Change default typefaces here */
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  font-size: 112.5%;
+  color: #282828;
+  -webkit-font-smoothing: antialiased; }
+
+/* Copy & Lists */
+p {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 300;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0; }
+
+ul, ol {
+  font-family: "futura-pt", sans-serif;
+  font-weight: 500;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+  ul li, ol li {
+    line-height: 1.5rem; }
+  ul ul, ul ol, ol ul, ol ol {
+    margin-top: 0;
+    margin-bottom: 0; }
+
+blockquote {
+  font-family: "futura-pt", sans-serif;
+  line-height: 1.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  /* Change heading typefaces here */
+  font-family: "futura-pt", sans-serif;
+  font-weight: 700;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  line-height: 1.5rem; }
+
+h1 {
+  font-size: 4.242rem;
+  line-height: 4.5rem;
+  margin-top: 3rem; }
+
+h2 {
+  font-size: 2.828rem;
+  line-height: 3rem;
+  margin-top: 3rem; }
+
+h3 {
+  font-size: 1.414rem; }
+
+h4 {
+  font-size: 0.707rem; }
+
+h5 {
+  font-size: 0.47133rem; }
+
+h6 {
+  font-size: 0.3535rem; }
+
+/* Tables */
+table {
+  margin-top: 1.5rem;
+  border-spacing: 0px;
+  border-collapse: collapse; }
+  table td, table th {
+    padding: 0;
+    line-height: 27px; }
+
+/* Code blocks */
+code {
+  vertical-align: bottom; }
+
+/* Leading paragraph text */
+.lead {
+  font-size: 1.414rem; }
+
+/* Hug a the block above you */
+.hug {
+  margin-top: 0; }
+
+a, a:active, a:hover, a:visited {
+  color: #d0271a;
+  text-decoration: none; }
+
+a:active, a:hover {
+  text-decoration: underline; }
+
+.hr {
+  border-bottom: 1px solid #d0271a;
+  margin: 1em 1em 0 1em;
+  width: 60%;
+  height: 10px; }
+
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 90vw;
+  margin: 1em auto;
+  padding: 1em 0; }
+
+.top-nav__logo {
+  width: 40px; }
+
+.top-nav__menu ul {
+  margin: 0; }
+
+.top-nav__menu li {
+  display: inline-block;
+  margin-right: 1.25em; }
+
+.top-nav__menu a {
+  font-size: 0.9em;
+  color: #d0271a; }
+
+.jumbotron {
+  padding: 25vh 0;
+  text-align: center; }
+
+.jumbotron__logo {
+  width: 50vw; }
+
+.home__kvp {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 85%;
+  margin: 1em auto; }
+
+.home__kvp--item {
+  text-align: center;
+  width: 20vw; }
