@@ -254,16 +254,3 @@ footer p {
 .top-nav__menu a {
   font-size: 0.9em;
   color: #d0271a; }
-.blog-header {
-  max-width: 1200px;
-  margin: 10em auto; }
-.blog-header h1 {
-    text-align: center; }
-.blog-container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1em;
-  max-width: 1200px;
-  margin: 10em auto; }

@@ -1,5 +1,28 @@
-  <footer>This is the footer</footer>
-  <script src="app.js"></script>
-
-  </body>
-</html>
+<footer>
+  <div class="footer__socials">
+    <h3>follow:</h3>
+    <p>fb li in tw</p>
+  </div>
+  <div class="footer__contact">
+    <h3>connect:</h3>
+    <p><a href="mailto:hello@resolutionathens.com">hello@resolutionathens.com</a></p>
+    <p><a href="tel:706-369-7727">706.369.7727</a></p>
+    <p>{{ .Site.Params.address | safeHTML }}</p>
+  </div>
+  <div class="footer__about">
+    <h3>about:</h3>
+    <p><a href="/careers">careers</a></p>
+    <p><a href="/contact">contact</a></p>
+    <p><a href="/mission">mission</a></p>
+  </div>
+  <div class="footer__resources">
+    <h3>resources:</h3>
+    <p><a href="/blog">our blog</a></p>
+    <p><a href="/clients">clients</a></p>
+    <p><a href="/privacy">privacy policy</a></p>
+  </div>
+  <div class="footer__copyright">
+    <p>copyright &copy;2018 <a href="https://resolutionathens.com">resolution</a></p>
+  </div>
+</footer>
+<script src="app.js"></script>

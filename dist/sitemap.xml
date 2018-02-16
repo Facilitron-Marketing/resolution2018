@@ -3,8 +3,38 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>/</loc>
+    <loc>localhost:3000/blog/test/</loc>
+    <lastmod>2018-02-16T11:00:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost:3000/blog/athens-seo-our-six-month-results/</loc>
+    <lastmod>2018-02-14T09:23:36-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost:3000/blog/</loc>
+    <lastmod>2018-02-16T11:00:03-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>localhost:3000/categories/</loc>
     <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>localhost:3000/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>localhost:3000/</loc>
+    <lastmod>2018-02-16T11:00:03-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>localhost:3000/who-we-are/</loc>
   </url>
   
 </urlset>

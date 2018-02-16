@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head" . }}
+  <body>
+    {{ partial "top-nav" . }}
+    <div class="blog-container">
+      {{ range .Data.Pages }}
+      <div class="blog-card">
+        <!-- image -->
+        {{ if .Params.header__img }}
+        <img src="{{ .Site.BaseURL }}/img/blog/{{ .Params.header__img }}" alt="{{ .Title }}"/>
+        {{ end }}
+        <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+        <p>{{ .Params.description }}</p>
+      </div>
+      {{ end }}
+    </div>
+    <ul class="pagination">
+      {{ template "_internal/pagination.html" . }}
+    </ul>
+    {{ partial "footer" . }}
+    <script charset="utf-8">
+      console.log('_default/baseof.html');
+    </script>
+  </body>
+</html>
