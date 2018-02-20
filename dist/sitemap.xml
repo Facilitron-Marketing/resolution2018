@@ -3,38 +3,58 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>localhost:3000/blog/test/</loc>
-    <lastmod>2018-02-16T11:00:03-05:00</lastmod>
+    <loc>/blog/healthcare-marketing-branch-of-resolution/</loc>
+    <lastmod>2018-02-16T13:35:47-05:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost:3000/blog/athens-seo-our-six-month-results/</loc>
+    <loc>/blog/which-cms-should-you-choose/</loc>
+    <lastmod>2018-02-16T13:32:59-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/social-media-vs-traditional-advertising/</loc>
+    <lastmod>2018-02-16T13:32:19-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/adventures-in-after-effects/</loc>
+    <lastmod>2018-02-16T13:27:46-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/use-design-thinking-for-online-strategy/</loc>
+    <lastmod>2018-02-16T12:53:05-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/athens-seo-our-six-month-results/</loc>
     <lastmod>2018-02-14T09:23:36-05:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost:3000/blog/</loc>
-    <lastmod>2018-02-16T11:00:03-05:00</lastmod>
+    <loc>/blog/</loc>
+    <lastmod>2018-02-16T13:35:47-05:00</lastmod>
   </url>
   
   <url>
-    <loc>localhost:3000/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>localhost:3000/tags/</loc>
+    <loc>/tags/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>localhost:3000/</loc>
-    <lastmod>2018-02-16T11:00:03-05:00</lastmod>
+    <loc>/</loc>
+    <lastmod>2018-02-16T13:35:47-05:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>localhost:3000/who-we-are/</loc>
+    <loc>/who-we-are/</loc>
   </url>
   
 </urlset>

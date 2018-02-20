@@ -1,4 +1,4 @@
-baseurl = "localhost:3000"
+baseurl = "/"
 languageCode = "en-us"
 languageLang = "en"
 title = "Web design and graphic design for results-driven businesses | Athens GA"

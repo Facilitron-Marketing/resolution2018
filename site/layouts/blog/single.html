@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  {{ partial "head" . }}
+  <body>
+    {{ partial "top-nav" . }}
+    <main class="blog-content">
+      <h1>{{ .Title }}</h1>
+      <img class="blog__header-img" src={{ printf "/img/blog/%s" $.Params.header_image }} />
+      {{ .Content }}
+    </main>
+    {{ partial "footer" . }}
+    <script charset="utf-8">
+      console.log('_default/baseof.html');
+    </script>
+  </body>
+</html>

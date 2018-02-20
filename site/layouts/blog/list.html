@@ -8,8 +8,8 @@
       {{ range .Data.Pages }}
       <div class="blog-card">
         <!-- image -->
-        {{ if .Params.header__img }}
-        <img src="{{ .Site.BaseURL }}/img/blog/{{ .Params.header__img }}" alt="{{ .Title }}"/>
+        {{ if .Params.teaser_img }}
+        <img src="{{ .Site.BaseURL }}img/blog/{{ .Params.teaser_img }}" alt="{{ .Title }}"/>
         {{ end }}
         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <p>{{ .Params.description }}</p>

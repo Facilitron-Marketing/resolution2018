@@ -30,13 +30,13 @@ gulp.task("build-preview", ["sass", "css", "js", "fonts"], (cb) => buildSite(cb,
 gulp.task("sass", () =>
   gulp.src("./src/sass/*.sass")
     .pipe(sass().on('error', sass.logError))
-    .pipe(gulp.dest("./src/css"))
+    .pipe(gulp.dest("./site/static/css"))
 )
 
 // Compile CSS with PostCSS
 gulp.task("css", () => (
-  gulp.src("./src/css/*.css")
-    .pipe(postcss([cssImport({from: "./src/css/main.css"}), cssnext()]))
+  gulp.src("./site/static/css/*.css")
+  .pipe(postcss([cssImport({from: "./site/static/css/main.css"}), cssnext()]))
     .pipe(gulp.dest("./dist/css"))
     .pipe(browserSync.stream())
 ));

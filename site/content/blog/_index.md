@@ -1,6 +1,6 @@
 ---
 title: "Blog"
-layout: blog
+layout: list
 ---
 
 h1. Hello
