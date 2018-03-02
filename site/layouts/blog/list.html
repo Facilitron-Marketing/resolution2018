@@ -13,6 +13,7 @@
           <img src="{{ .Site.BaseURL }}img/blog/{{ .Params.teaser_image }}" alt="{{ .Title }}"/>
           {{ end }}
         </div>
+        <p class="date">{{ .Date.Format "2006 Jan 2" }}</p>
         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <p>{{ .Params.description }}</p>
       </div>

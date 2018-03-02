@@ -1,19 +1,21 @@
+// list
 .blog-header
-  max-width: 800px
   margin: 10em auto
+  max-width: 800px
   h1
     text-align: center
 
 .blog-container
-  display: grid
-  grid-template-columns: 1fr 1fr 1fr
-  grid-gap: 4em 2em
   align-items: end
-  max-width: 1000px
+  display: grid
+  grid-gap: 4em 2em
+  grid-template-columns: repeat(3, 1fr)
   margin: 10em auto
-
+  max-width: 1000px
 
 .blog-card
+  h3
+    margin-top: 0
   p
     margin-top: 0.5em
   &__image
@@ -29,11 +31,25 @@
   img
     max-width: 630px
 
+.blog-card:nth-child(4n)
+  grid-column: span 2
+  &__image
+    max-width: 630px
+  img
+    max-width: 630px
+
+.date
+  color: $res-blue
+  font-size: 0.8em
+  font-weight: 500
+  text-transform: uppercase
+
+// single
 
 .blog-content
-  max-width: 800px
   margin: 5em auto
+  max-width: 800px
 
 .blog__header-img
-  margin-top: 1em
+  margin: 2em auto
 

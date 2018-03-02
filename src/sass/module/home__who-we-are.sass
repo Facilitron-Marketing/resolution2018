@@ -1,9 +1,14 @@
+main
+  padding-left: 1em
+  padding-right: 1em
+  overflow: hidden
+
 .home__who-we-are
   width: 1000px
-  margin: 3em auto
+  margin: 10em auto
   display: grid
   grid-template-columns: repeat(20, 50px)
-  grid-template-rows: repeat(15, 50px)
+  grid-template-rows: repeat(16, 50px)
 
 .home__who-we-are--image1
   grid-column: 14
@@ -14,12 +19,13 @@
   grid-row: 8
 
 .home__who-we-are--text
-  grid-column: 2 / 11
+  grid-column: 1 / 11
   grid-row: 2 / 13
-  padding: 1em
-  background: rgba(255,255,255,0.95)
+
+.bg-white
+  padding: 2em
   border: 1px solid #eee
   box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.2)
+  background: rgba(255,255,255,0.95)
   h2
     margin-top: 0
-
