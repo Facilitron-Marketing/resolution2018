@@ -1,0 +1,39 @@
+.blog-header
+  max-width: 800px
+  margin: 10em auto
+  h1
+    text-align: center
+
+.blog-container
+  display: grid
+  grid-template-columns: 1fr 1fr 1fr
+  grid-gap: 4em 2em
+  align-items: end
+  max-width: 1000px
+  margin: 10em auto
+
+
+.blog-card
+  p
+    margin-top: 0.5em
+  &__image
+    max-width: 300px
+    img
+      max-width: 300px
+
+.blog-card:first-of-type
+  grid-column: span 2
+
+  &__image
+    max-width: 630px
+  img
+    max-width: 630px
+
+
+.blog-content
+  max-width: 800px
+  margin: 5em auto
+
+.blog__header-img
+  margin-top: 1em
+

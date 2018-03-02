@@ -8,9 +8,11 @@
       {{ range .Data.Pages }}
       <div class="blog-card">
         <!-- image -->
-        {{ if .Params.teaser_img }}
-        <img src="{{ .Site.BaseURL }}img/blog/{{ .Params.teaser_img }}" alt="{{ .Title }}"/>
-        {{ end }}
+        <div class="blog-card__image">
+          {{ if .Params.teaser_image }}
+          <img src="{{ .Site.BaseURL }}img/blog/{{ .Params.teaser_image }}" alt="{{ .Title }}"/>
+          {{ end }}
+        </div>
         <h3><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
         <p>{{ .Params.description }}</p>
       </div>
@@ -20,8 +22,5 @@
       {{ template "_internal/pagination.html" . }}
     </ul>
     {{ partial "footer" . }}
-    <script charset="utf-8">
-      console.log('blog/list.html');
-    </script>
   </body>
 </html>

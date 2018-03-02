@@ -3,6 +3,8 @@ title: "How we nailed Athens SEO in 6 months"
 date: 2018-02-14T09:23:36-05:00
 header_image: 'athens-seo-header.png'
 teaser_image: 'athens-seo-teaser.png'
+square_image: 'athens-seo-square.png'
+description: In which we share our techniques for getting onto the front page of search results.
 ---
 
 We've been experimenting with on-site SEO for [resolutionathens.com](https://resolutionathens.com). We've learned a lot and had some pretty incredible results.
@@ -42,4 +44,7 @@ Granted, Athens is a small town and it would no doubt take us longer to have the
 
 Is Resolution the best web design and development firm in Athens? That’s our goal. We aim to accomplish that goal by fulfilling our promise of better strategy, better design, and better results for our clients.
 
-As always, if you are looking to elevate your business and achieve better results from your marketing and advertising, give us a call. We love you.
+As always, if you are looking to elevate your business and achieve better results from your marketing and advertising, give us a call.
+
+Until next time, we love you! &#128140;
+

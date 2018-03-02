@@ -2,14 +2,16 @@
 title: "Adventures in After Effects"
 date: 2018-02-16T13:27:46-05:00
 header_image: 'after-effects-header.png'
-teaser_image: 'after-effects-header.png'
+teaser_image: 'after-effects-teaser.png'
+square_image: 'after-effects-square.png'
+description: In which we document the creation of a rock and roll video promo for Resolution.
 ---
 
 We’ve had a promotional video for both branches of Resolution on our todo list for months now. We finally bit the bullet and put one together last week. It’s a rock and roll promo, so turn up your volume and hit the play button. Then check out the dirty details of how the sausage was made.
 
 <iframe style="margin-top: 1em" width="853" height="480" src="https://www.youtube.com/embed/c8Ki1Noo6_Y" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-### A pencil and a notebook
+### A pencil and a notebook &#128221;
 
 I’m a fan of writing things down before sitting down at a keyboard. I’ve found that it’s easier for me to get my thoughts down quickly and not get caught up in the minutiae of pixels and alignment.
 
@@ -19,8 +21,7 @@ They are portable and disposable, which means that I don’t have any reservatio
 
 Here are my initial storyboard sketches. Fancy, huh? I’m not always this messy with my sketches.
 
-### Promo video storyboard
-Refining the storyboards in Illustrator
+### Promo video storyboard &#128253;
 I knew that I was going to animating in Adobe After Effects, and I knew that After Effects and Illustrator play nicely together, with some caveats. I also knew that I wanted to use the vector illustrations we’ve been using on the site, so Illustrator was an easy choice.
 
 Here is the final storyboard.
@@ -43,9 +44,9 @@ I used Sound Keys to map the kick, snare, and key frequencies from the interlude
 
 I wound up creating the entire video in one composition because I couldn’t figure out how to synch the audio into pre-compositions. I’ll figure that out next time. Here is half of the final timeline:
 
-### Wrapping up
+### Wrapping up &#128190;
 
 I posted this to socials claiming that it took me 9000 hours in MSPaint. In reality, it took about 10 hours and that included frequent research breaks. I learned a ton and have already begun a promo video for Resolution Healthcare.
 
-Until next time, we love you!
+Until next time, we love you! &#128140;
 
