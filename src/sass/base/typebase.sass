@@ -10,10 +10,10 @@ $scale: 1.414
 /* Setup */
 html
   /* Change default typefaces here */
-  font-family: "futura-pt", sans-serif
-  font-weight: 500
-  font-size: $baseFontSize / 16 * 100%
   color: $res-black
+  font-family: "futura-pt", sans-serif
+  font-size: $baseFontSize / 16 * 100%
+  font-weight: 500
 
   // Make everything look a little nicer in webkit
   -webkit-font-smoothing: antialiased
@@ -29,34 +29,36 @@ p
   font-family: "futura-pt", sans-serif
   font-weight: 300
   line-height: $leading
-  margin-top: $leading
   margin-bottom: 0
+  margin-top: $leading
 
 ul, ol
   font-family: "futura-pt", sans-serif
   font-weight: 500
-  margin-top: $leading
   margin-bottom: $leading
+  margin-top: $leading
+
   li
     line-height: $leading
+
   ul, ol
-    margin-top: 0
     margin-bottom: 0
+    margin-top: 0
 
 blockquote
   font-family: "futura-pt", sans-serif
   line-height: $leading
-  margin-top: $leading
   margin-bottom: $leading
+  margin-top: $leading
 
 /* Headings */
 h1, h2, h3, h4, h5, h6
   /* Change heading typefaces here */
   font-family: "futura-pt", sans-serif
   font-weight: 700
-  margin-top: $leading
-  margin-bottom: 0
   line-height: $leading
+  margin-bottom: 0
+  margin-top: $leading
 
 h1
   font-size: 3 * $scale * 1rem
@@ -77,9 +79,9 @@ h6
 
 /* Tables */
 table
-  margin-top: $leading
-  border-spacing: 0px
   border-collapse: collapse
+  border-spacing: 0px
+  margin-top: $leading
 
   td, th
     padding: 0
@@ -110,9 +112,9 @@ $a-tags-hover: 'a:active, a:hover'
 
 .hr
   border-bottom: 1px solid $res-red
+  height: 10px
   margin: 1em auto 0 auto
   width: 60%
-  height: 10px
 
 strong
   font-weight: 500
@@ -121,9 +123,8 @@ em
   font-style: italic
 
 blockquote
-  padding-left: 1em;
   border-left: 2px solid $res-red
-
+  padding-left: 1em;
 
 .center-text
   text-align: center
