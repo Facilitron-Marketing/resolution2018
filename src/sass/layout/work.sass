@@ -1,26 +1,23 @@
 .work-container
-  display: flex
-  flex-wrap: wrap
-  max-width: 1040px
-  justify-content: space-around
-  align-items: flex-end
-  margin: 0 auto
+  display: grid
+  grid-template-columns: repeat(2, minmax(max-content, 1fr))
+  grid-gap: 1em
+  margin: 3em auto
   &__header
     margin-bottom: 3em
-    text-transform: uppercase
+    text-align: center
+    grid-column: span 2
+    h2
+      text-transform: uppercase
   &__item
-    border: 1px solid #eeeeee
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.25)
-    margin-bottom: 2em
-    max-width: 100%
-    img
-      max-width: 100%
+    padding: 3em 0
+    &--wide
+      grid-column: span 2
 
 .web-container
   display: grid
-  grid-template-columns: repeat(2, 1fr)
+  grid-template-columns: repeat(2, minmax(max-content, 1fr))
   margin: 3em auto
-  width: 1040px
   &__header
     margin-bottom: 3em
     text-align: center

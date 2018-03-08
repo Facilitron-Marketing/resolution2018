@@ -5,9 +5,11 @@
 
   <body>
     {{ partial "top-nav" . }}
-    <header class="who-header center-text">
-      <h1 class="red">OUR WORK</h1>
-      <p>We partner with our clients to make sure that our work aligns with and helps achieve their mission and business objectives. We take that partnership seriously and treat our clients’ projects as if they were our own. Because of that, we are careful to determine our fit.</p>
+    <header>
+      <figure class="jumbotron">
+        <h1 class="red">OUR WORK</h1>
+        <p>We partner with our clients to make sure that our work aligns with and helps achieve their mission and business objectives. We take that partnership seriously and treat our clients’ projects as if they were our own. Because of that, we are careful to determine our fit.</p>
+      </figure>
     </header>
     <main>
 
@@ -16,14 +18,54 @@
           <h2>Web</h2>
           <p>You need a beautiful website that will help your business grow. Ours are modern, responsive (mobile-friendly), fast, and optimized for SEO, and focused on getting you more business.</p>
         </div>
-          <div class="web-container__item"><img src="/img/web/facilitron.png" alt="Facilitron"></div>
-          <div class="web-container__item"><img src="/img/web/aapa.png" alt="Athens AAPA"></div>
-          <div class="web-container__item"><img src="/img/web/quiet-ground.png" alt="Quiet Ground Retreats"></div>
-          <div class="web-container__item"><img src="/img/web/ph-nine.png" alt="Penthouse Nine"></div>
-          <div class="web-container__item"><img src="/img/web/gregg-allman.png" alt="Gregg Allman"></div>
-          <div class="web-container__item"><img src="/img/web/sorba-atl.png" alt="Sorba Atlanta"></div>
-          <div class="web-container__item"><img src="/img/web/nuci.png" alt="Nuci's Space"></div>
-          <div class="web-container__item"><img src="/img/web/res-health.png" alt="Resolution Healthcare"></div>
+        <div class="web-container__item">
+          <figure>
+            <img src="/img/web/facilitron.png" alt="Facilitron">
+            <figcaption><a href="http://Facilitron.com">Facilitron</a></figcaption>
+          </figure>
+        </div>
+        <div class="web-container__item">
+          <figure>
+            <img src="/img/web/aapa.png" alt="Athens AAPA">
+            <figcaption><a href="http://http://athenspsychology.org/">Athens AAPA</a></figcaption>
+          </figure>
+        </div>
+        <div class="web-container__item">
+          <figure>
+            <img src="/img/web/quiet-ground.png" alt="Quiet Ground Retreats">
+            <figcaption><a href="http://quietgroundretreats.com">Quiet Ground Retreats</a></figcaption>
+          </figure>
+        </div>
+        <div class="web-container__item">
+          <figure>
+            <img src="/img/web/ph-nine.png" alt="Penthouse Nine">
+            <figcaption><a href="http://penthousenumbernine.com">Penthouse Number Nine</a></figcaption>
+          </figure>
+        </div>
+        <div class="web-container__item">
+          <figure>
+            <img src="/img/web/gregg-allman.png" alt="Gregg Allman">
+            <figcaption><a href="http://greggallman.com">Gregg Allman</a></figcaption>
+          </figure>
+        </div>
+        <div class="web-container__item">
+          <figure>
+            <img src="/img/web/sorba-atl.png" alt="Sorba Atlanta">
+            <figcaption><a href="http://sorbaatlanta.org">SORBA Atlanta</a></figcaption>
+          </figure>
+        </div>
+        <div class="web-container__item">
+          <figure>
+            <img src="/img/web/nuci.png" alt="Nuci's Space">
+            <figcaption><a href="http://nuci.org">Nuci's Space</a></figcaption>
+          </figure>
+        </div>
+        <div class="web-container__item">
+          <figure>
+            <img src="/img/web/res-health.png" alt="Resolution Healthcare">
+            <figcaption><a href="http://resolution.agency">Resolution Healthcare</a></figcaption>
+          </figure>
+        </div>
       </div>
       <section class="testimonial">
         <div class="hr"></div>
@@ -33,18 +75,79 @@
       </section>
       <section class="work-container">
         <div class="work-container__header"><h2>Print</h2></div>
-        <div class="work-container__item"><img src="/img/print/bob-fiber-optic.jpg" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/athens-regional-pea-min.png" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/athens-regional-thimble-min.png" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/athens-regional-annual-report-min.jpg" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/athens-regional-barrow-min.png" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/ayp-label-rainbow-blend.png" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/nucis-greenroom-poster-min.png" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/athens-regional-infographic-min.png" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/vein-innovations-tennis-min.jpg" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/vein-innovations-tennis-skirt-min.jpg" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/athens-regional-education-min.png" alt=""></div>
-        <div class="work-container__item"><img src="/img/print/bob-flower-girl.jpg" alt=""></div>
+        <div class="work-container__item--wide">
+          <figure>
+            <img src="/img/print/bob-fiber-optic.jpg" alt="">
+            <figcaption>Bob</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/athens-regional-pea-min.png" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/athens-regional-thimble-min.png" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item--wide"><img src="/img/print/athens-regional-annual-report-min.jpg" alt=""></div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/bob-flower-girl.jpg" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/ayp-label-rainbow-blend.png" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/locos-ketchup.png" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/nucis-greenroom-poster-min.png" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item--wide">
+          <figure>
+            <img src="/img/print/athens-regional-infographic-min.png" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/vein-innovations-tennis-min.jpg" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/vein-innovations-tennis-skirt-min.jpg" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/athens-regional-education-min.png" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
+        <div class="work-container__item">
+          <figure>
+            <img src="/img/print/athens-regional-barrow-min.jpg" alt="">
+            <figcaption>Facilitron</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="testimonial">
