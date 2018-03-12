@@ -7,5 +7,19 @@
   grid-gap: 2em
   margin: 5em auto
   transition: all 1s
+  .res-btn
+    grid-column: span 2
+    max-width: 35%
+    justify-self: center
   .what-we-do__card
     text-align: left
+    @media(max-width: 1050px)
+      text-align: center
+      max-width: 100%
+
+@media(max-width: 1000px)
+  .home__what-we-do--card-container
+    display: flex
+    flex-direction: column
+    align-items: center
+

@@ -11,8 +11,9 @@ const consoleColors = {
   "image": "font-size: 36px;"
 }
 
-init();
-
+document.addEventListener("DOMContentLoaded", function() {
+  init();
+});
 
 function init() {
   // get page
@@ -48,10 +49,94 @@ function initHome() {
   let homeWhy = false;
   let homeBlog = false;
 
-  window.addEventListener('scroll', debounce(scaleResLogo, 10));
-  window.addEventListener('scroll', debounce(checkScrollHome, 20));
+  scrollHome();
+  tellStoryHome();
+}
 
-  tellStory();
+function scrollHome() {
+  const controller = new ScrollMagic.Controller();
+
+  const whoTween = new TimelineLite();
+  whoTween.to(".home__who-we-are--text", 0.75, {rotation: 2});
+  whoTween.to("#ian", 0.75, {scale: 0.95, rotation: -2}, 0.1);
+  whoTween.to("#taylor", 0.75, {scale: 0.95, rotation: 1.2}, 0.2);
+
+  // logo scrolling
+  TweenLite.from("#res-logo", 1.25, {scale: 0.5});
+  new ScrollMagic.Scene({
+    triggerElement: ".home__kvp"
+  })
+  .setTween("#res-logo", 1, {scale: 0.5})
+  .addTo(controller);
+
+  // who-we-are
+  new ScrollMagic.Scene({
+    triggerElement: "#who-we-are",
+    offset: 300
+  })
+  .setTween(whoTween)
+  .addTo(controller);
+}
+
+function tellStoryHome() {
+  const storyController = new ScrollMagic.Controller();
+  let chapter = 0;
+
+  new ScrollMagic.Scene({
+    triggerElement: ".home__kvp"
+  })
+  .on("enter", function(e) {
+    if(chapter == 0) {
+      chapter++;
+      console.log('%c🐵', consoleColors.image);
+      console.log('%cOh… Hello there! I\'m Chimp, the resident code monkey at Resolution.', consoleColors.teal);
+      console.log('%cI\'m somewhat surprised to see you here. I don\'t get a lot of visitors.', consoleColors.teal);
+    }
+  })
+  .addTo(storyController);
+
+  new ScrollMagic.Scene({
+    triggerElement: "#who-we-are"
+  })
+  .on("enter", function(e) {
+    if(chapter == 1){
+      chapter++;
+      console.clear();
+      console.log('%c🐵', consoleColors.image);
+      console.log('%cI guess you either like code or are interested in something I\'ve done here.', consoleColors.teal);
+      console.log('%cThat\'s super cool. Most people don\'t pay attention to these things.', consoleColors.teal);
+      console.log('%cI obsess over them.', consoleColors.teal);
+    }
+  })
+  .addTo(storyController);
+
+  new ScrollMagic.Scene({
+    triggerElement: ".testimonial"
+  })
+  .on("enter", function(e) {
+    if(chapter == 2){
+      chapter++;
+      console.clear();
+      console.log('%c🙈', consoleColors.image);
+      console.log('%cMost people, even other agencies, would rather ignore development.', consoleColors.teal);
+      console.log('%cI know. I\'ve looked at their code. It\'s scary.', consoleColors.teal);
+    }
+  })
+
+  .addTo(storyController);
+  new ScrollMagic.Scene({
+    triggerElement: "#why-it-matters"
+  })
+  .on("enter", function(e) {
+    if(chapter == 3){
+      chapter++;
+      console.clear();
+      console.log('%c🐵', consoleColors.image);
+      console.log('%cIt\'s not just pride in my craft…', consoleColors.teal);
+      console.log('%cGood code makes my sites faster and improves SEO.', consoleColors.teal);
+    }
+  })
+  .addTo(storyController);
 }
 
 function scaleResLogo(event) {
@@ -61,36 +146,15 @@ function scaleResLogo(event) {
   }
 };
 
-function checkScrollHome(event) {
-  const whoSection = document.querySelector('.home__who-we-are');
-  const whatSection = document.querySelector('.home__what-we-do');
-  const whySection = document.querySelector('.home__why-it-matters');
-  const blogSection = document.querySelector('.home__blog');
-  const sections = [whoSection, whatSection, whySection, blogSection];
-
-  sections.forEach(section => {
-    // halfway through the section
-    const slideInAt = (window.scrollY + window.innerHeight) - section.clientHeight/2;
-    // bottom of the section
-    const sectionBottom = section.offsetTop + section.clientHeight;
-    const isHalfShown = slideInAt > section.offsetTop;
-    const isNotScrolledPast = window.scrollY < sectionBottom;
-    if (isHalfShown && isNotScrolledPast) {
-      section.classList.add('active');
-    } else {
-      section.classList.remove('active');
-    }
-  })
-};
-
-function tellStory() {
-  console.log('%c🐵', consoleColors.image);
-  wait(1000);
-  console.log('%cOh… Hello there!', consoleColors.teal);
-}
 // who-we-are
 function initWho() {
   console.log('who');
+  scrollWho();
+}
+
+function scrollWho() {
+  const controller = new ScrollMagic.Controller();
+
 }
 
 // what-we-do
@@ -147,11 +211,3 @@ function getOffset( el ) {
   }
   return { top: _y, left: _x };
 }
-
-function wait(ms){
-  var start = new Date().getTime();
-  var end = start;
-  while(end < start + ms) {
-    end = new Date().getTime();
-  }
-};
