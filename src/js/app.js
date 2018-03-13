@@ -56,13 +56,11 @@ function initHome() {
 function scrollHome() {
   const controller = new ScrollMagic.Controller();
 
-  const whoTween = new TimelineLite();
-  whoTween.to(".home__who-we-are--text", 0.75, {rotation: 2});
-  whoTween.to("#ian", 0.75, {scale: 0.95, rotation: -2}, 0.1);
-  whoTween.to("#taylor", 0.75, {scale: 0.95, rotation: 1.2}, 0.2);
-
+  //logo drawing
+  // TweenLite.to("#logo-r", 0.5, {drawSVG: "50%"});
+  TweenLite.to("#res-logo", 0.5, {drawSVG: "50%"});
   // logo scrolling
-  TweenLite.from("#res-logo", 1.25, {scale: 0.5});
+  // TweenLite.from("#res-logo", 1.25, {scale: 0.5});
   new ScrollMagic.Scene({
     triggerElement: ".home__kvp"
   })
@@ -70,11 +68,28 @@ function scrollHome() {
   .addTo(controller);
 
   // who-we-are
+  const whoTween = new TimelineLite();
+  whoTween.to(".home__who-we-are--text", 0.75, {rotation: 2});
+  whoTween.to("#ian", 0.75, {scale: 0.95, rotation: -2}, 0.1);
+  whoTween.to("#taylor", 0.75, {scale: 0.95, rotation: 1.2}, 0.2);
+
   new ScrollMagic.Scene({
     triggerElement: "#who-we-are",
     offset: 300
   })
   .setTween(whoTween)
+  .addTo(controller);
+
+  // what-we-do
+  const whatTween = new TimelineLite();
+  whatTween.from(".what-we-do__card", 0.75, {rotation: random(-2, 2)});
+
+  new ScrollMagic.Scene({
+    triggerElement: "#what-we-do",
+    offset: 400
+  })
+  .setTween(whatTween)
+  .addIndicators()
   .addTo(controller);
 }
 
@@ -199,6 +214,12 @@ function debounce(func, wait = 20, immediate = true) {
     timeout = setTimeout(later, wait);
     if (callNow) func.apply(context, args);
   };
+};
+
+function random(min, max) {
+  if (max == null) { max = min; min = 0; }
+  if (min > max) { var tmp = min; min = max; max = tmp; }
+  return min + (max - min) * Math.random();
 };
 
 function getOffset( el ) {
