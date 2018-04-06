@@ -15,7 +15,18 @@ document.addEventListener("DOMContentLoaded", function() {
   init();
 });
 
+function menuHandler(e) {
+  e.preventDefault();
+  var burger = document.querySelector(".hamburger");
+  var mobileMenu = document.querySelector(".mobile-menu");
+  burger.classList.toggle("is-active");
+  mobileMenu.classList.toggle("visible");
+}
+
 function init() {
+  // menu listener
+  var menu = document.querySelector(".hamburger");
+  menu.addEventListener("click", menuHandler, false);
   // get page
   const page = window.location.pathname.split('/')[1];
   switch (page) {
@@ -42,13 +53,6 @@ function init() {
 
 // home
 function initHome() {
-  // section flags
-  let homeHello = false;
-  let homeWho = false;
-  let homeWhat = false;
-  let homeWhy = false;
-  let homeBlog = false;
-
   scrollHome();
   tellStoryHome();
 }
@@ -57,10 +61,19 @@ function scrollHome() {
   const controller = new ScrollMagic.Controller();
 
   //logo drawing
-  // TweenLite.to("#logo-r", 0.5, {drawSVG: "50%"});
-  TweenLite.to("#res-logo", 0.5, {drawSVG: "50%"});
+  const logoTween = new TimelineLite();
+  logoTween.from("#logo-r", 0.25, {scale:0.25, transformOrigin: "center"}, "+=0.2")
+  .from("#logo-e", 0.25, {scale:0.25, opacity: 0, transformOrigin: "center"}, "-=0.1")
+  .from("#logo-s", 0.25, {scale:0.25, opacity: 0, transformOrigin: "center"}, "-=0.1")
+  .from("#logo-o", 0.25, {scale:0.25, opacity: 0, transformOrigin: "center"}, "-=0.1")
+  .from("#logo-l", 0.25, {scale:0.25, opacity: 0, transformOrigin: "center"}, "-=0.1")
+  .from("#logo-u", 0.25, {scale:0.25, opacity: 0, transformOrigin: "center"}, "-=0.1")
+  .from("#logo-t", 0.25, {scale:0.25, opacity: 0, transformOrigin: "center"}, "-=0.1")
+  .from("#logo-i", 0.25, {scale:0.25, opacity: 0, transformOrigin: "center"}, "-=0.1")
+  .from("#logo-o2", 0.25, {scale:0.25, opacity:0, transformOrigin: "center"}, "-=0.1")
+  .from("#logo-n", 0.25, {scale:0.25, opacity:0, transformOrigin: "center"}, "-=0.1")
+
   // logo scrolling
-  // TweenLite.from("#res-logo", 1.25, {scale: 0.5});
   new ScrollMagic.Scene({
     triggerElement: ".home__kvp"
   })
@@ -69,28 +82,23 @@ function scrollHome() {
 
   // who-we-are
   const whoTween = new TimelineLite();
-  whoTween.to(".home__who-we-are--text", 0.75, {rotation: 2});
-  whoTween.to("#ian", 0.75, {scale: 0.95, rotation: -2}, 0.1);
-  whoTween.to("#taylor", 0.75, {scale: 0.95, rotation: 1.2}, 0.2);
+  const whoHeight = document.getElementById("who-we-are").clientHeight;
+  whoTween.from(".home__who-we-are--text", 0.75, {rotation: 2})
+    .from("#ian", 0.75, {scale: 0.95, rotation: -2})
+    .from("#taylor", 0.75, {scale: 0.95, rotation: 1.2});
 
   new ScrollMagic.Scene({
     triggerElement: "#who-we-are",
-    offset: 300
+    duration: 200
   })
   .setTween(whoTween)
   .addTo(controller);
 
   // what-we-do
-  const whatTween = new TimelineLite();
-  whatTween.from(".what-we-do__card", 0.75, {rotation: random(-2, 2)});
+  tweenFromLeft("what-we-do", controller);
 
-  new ScrollMagic.Scene({
-    triggerElement: "#what-we-do",
-    offset: 400
-  })
-  .setTween(whatTween)
-  .addIndicators()
-  .addTo(controller);
+  // why-it-matters
+  tweenFromRight("why-it-matters", controller);
 }
 
 function tellStoryHome() {
@@ -137,8 +145,8 @@ function tellStoryHome() {
       console.log('%cI know. I\'ve looked at their code. It\'s scary.', consoleColors.teal);
     }
   })
-
   .addTo(storyController);
+
   new ScrollMagic.Scene({
     triggerElement: "#why-it-matters"
   })
@@ -154,27 +162,40 @@ function tellStoryHome() {
   .addTo(storyController);
 }
 
-function scaleResLogo(event) {
-  if (document.querySelector('.jumbotron__logo') != null) {
-    let elToScale = document.querySelector('.jumbotron__logo');
-    elToScale.style.cssText = `width: ${(80 - window.scrollY/10)}%`;
-  }
-};
-
 // who-we-are
 function initWho() {
-  console.log('who');
   scrollWho();
 }
 
 function scrollWho() {
   const controller = new ScrollMagic.Controller();
+  const tl = TweenLite.from(".jumbotron", 1, {scale: 0, opacity: 0});
 
+  tweenFromLeft("strategy", controller);
+  tweenFromRight("designers", controller);
+  tweenFromLeft("developers", controller);
+  tweenFromRight("story", controller);
+  tweenFromLeft("taylor", controller);
+  tweenFromRight("ian", controller);
+  // tweenFromLeft("jennifer", controller);
+  tweenFromLeft("nicolette", controller);
 }
 
 // what-we-do
 function initWhat() {
-  console.log('what');
+  scrollWhat();
+}
+
+function scrollWhat() {
+  const controller = new ScrollMagic.Controller();
+  const tl = TweenLite.from(".jumbotron", 1, {scale: 0, opacity: 0});
+
+  tweenFromLeft("brand-card", controller);
+  tweenFromRight("creative-card", controller);
+  tweenFromLeft("web-card", controller);
+  tweenFromRight("graphic-card", controller);
+  tweenFromLeft("digital-card", controller);
+  tweenFromRight("content-card", controller);
 }
 
 // our-work
@@ -190,13 +211,18 @@ function initBlog() {
 
 // contact
 function initContact() {
-  console.log('contact');
+  scrollContact();
+}
+
+function scrollContact() {
+  const controller = new ScrollMagic.Controller();
+  const tl = TweenLite.from(".jumbotron", 1, {scale: 0, opacity: 0});
 }
 
 function colorHeaderImg(event) {
   if (document.querySelector('.zoom') != null) {
-    let elToScale = document.querySelector('.zoom');
-    elToScale.style.cssText = `filter: hue-rotate(${window.scrollY/4}deg)`;
+    const elToColor = document.querySelector('.zoom');
+    elToColor.style.cssText = `filter: hue-rotate(${window.scrollY/4}deg)`;
   }
 };
 
@@ -232,3 +258,27 @@ function getOffset( el ) {
   }
   return { top: _y, left: _x };
 }
+
+// animation functions
+function tweenFromLeft(el, controller) {
+  let c = controller;
+  const element = document.getElementById(`${el}`);
+  new ScrollMagic.Scene({
+    triggerElement: element,
+    duration: 200
+  })
+  .setTween(TweenLite.from(element, 1, {x: -1200, opacity: 0}))
+  .addTo(c);
+}
+
+function tweenFromRight(el, controller) {
+  let c = controller;
+  const element = document.getElementById(`${el}`);
+  new ScrollMagic.Scene({
+    triggerElement: element,
+    duration: 200
+  })
+  .setTween(TweenLite.from(element, 1, {x: 1200, opacity: 0}))
+  .addTo(c);
+}
+

@@ -1,5 +1,5 @@
 // Typesetting variables.
-$baseFontSize: 22 // in pixels. This would result in 22px on desktop
+$baseFontSize: 24 // in pixels. This would result in 22px on desktop
 $baseLineHeight: 1.5 // how large the line height is as a multiple of font size
 $leading: $baseLineHeight * 1rem
 
@@ -35,16 +35,17 @@ p
 
 ul, ol
   font-family: "futura-pt", sans-serif
-  font-weight: 500
+  font-weight: 300
   margin-bottom: $leading
   margin-top: $leading
 
   li
     line-height: $leading
 
-  ul, ol
-    margin-bottom: 0
-    margin-top: 0
+ol
+  list-style: decimal
+  margin-left: 1em
+  font-weight: 300
 
 blockquote
   font-family: "futura-pt", sans-serif
@@ -115,7 +116,7 @@ $a-tags-hover: 'a:active, a:hover'
   text-decoration: none
 
 #{$a-tags-hover}
-  text-decoration: underline
+  border-bottom: 1px dashed $res-red
 
 .hr
   border-bottom: 1px solid $res-red

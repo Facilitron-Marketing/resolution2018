@@ -39,12 +39,15 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
+*:focus {
+  outline: thin dashed #d0271a; }
+
 /* Setup */
 html {
   /* Change default typefaces here */
   color: #282828;
   font-family: "futura-pt", sans-serif;
-  font-size: 137.5%;
+  font-size: 150%;
   font-weight: 500;
   -webkit-font-smoothing: antialiased; }
 
@@ -59,14 +62,16 @@ p {
 
 ul, ol {
   font-family: "futura-pt", sans-serif;
-  font-weight: 500;
+  font-weight: 300;
   margin-bottom: 1.5rem;
   margin-top: 1.5rem; }
   ul li, ol li {
     line-height: 1.5rem; }
-  ul ul, ul ol, ol ul, ol ol {
-    margin-bottom: 0;
-    margin-top: 0; }
+
+ol {
+  list-style: decimal;
+  margin-left: 1em;
+  font-weight: 300; }
 
 blockquote {
   font-family: "futura-pt", sans-serif;
@@ -118,7 +123,7 @@ table {
   margin-top: 1.5rem; }
   table td, table th {
     padding: 0;
-    line-height: 33px; }
+    line-height: 36px; }
 
 /* Code blocks */
 code {
@@ -137,7 +142,7 @@ a, a:active, a:hover, a:visited {
   text-decoration: none; }
 
 a:active, a:hover {
-  text-decoration: underline; }
+  border-bottom: 1px dashed #d0271a; }
 
 .hr {
   border-bottom: 1px solid #d0271a;
@@ -233,11 +238,10 @@ section {
   margin: 8em auto; }
 
 .team-pics {
-  max-width: 650px;
   margin: auto;
-  display: grid;
-  grid-template-columns: 300px 300px;
-  grid-gap: 1em; }
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around; }
 
 .who__section {
   width: 80%;
@@ -257,6 +261,7 @@ section {
   margin: 8em auto;
   max-width: 800px;
   display: flex;
+  flex-wrap: wrap;
   align-items: flex-end; }
   .who__bio .bio-title {
     margin-top: 0; }
@@ -290,6 +295,19 @@ section {
     .web-container__header h2 {
       text-transform: uppercase; }
   .web-container__item {
+    padding: 3em 0; }
+
+.identity-container {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(max-content, 1fr));
+  margin: 3em auto; }
+  .identity-container__header {
+    margin-bottom: 3em;
+    text-align: center;
+    grid-column: span 2; }
+    .identity-container__header h2 {
+      text-transform: uppercase; }
+  .identity-container__item {
     padding: 3em 0; }
 
 .res-btn {
@@ -408,7 +426,8 @@ main {
 
 .home__who-we-are--text {
   grid-column: 1 / 11;
-  grid-row: 2 / 13; }
+  grid-row: 2 / 13;
+  z-index: 50; }
   @media (max-width: 1050px) {
     .home__who-we-are--text {
       max-width: 100%;
@@ -438,12 +457,13 @@ main {
   justify-content: center;
   margin: 0 auto;
   max-width: 1000px;
+  padding: 0 1em;
   text-align: center; }
   .jumbotron h1 {
     margin-top: 0; }
 
-.jumbotron__logo {
-  width: 80%; }
+#res-logo {
+  margin: 0 1em; }
 
 .testimonial {
   margin: 2em auto;
@@ -459,21 +479,108 @@ main {
   @media (max-width: 500px) {
     .top-nav {
       padding: 1em; } }
+  .top-nav__logo {
+    width: 40px; }
+  .top-nav__menu ul {
+    margin: 0; }
+  .top-nav__menu li {
+    display: inline-block;
+    margin-right: 1.25em; }
+  .top-nav__menu a {
+    font-size: 0.9em;
+    color: #d0271a; }
+  .top-nav__menu button {
+    display: none; }
 
-.top-nav__logo {
-  width: 40px; }
+.mobile-menu {
+  background: #fff;
+  display: none;
+  height: 100vh;
+  position: fixed;
+  text-align: center;
+  width: 100vw;
+  z-index: 99; }
+  .mobile-menu ul {
+    margin: 0 auto; }
 
-.top-nav__menu ul {
-  margin: 0; }
+.visible {
+  display: flex; }
 
-.top-nav__menu li {
-  display: inline-block;
-  margin-right: 1.25em; }
-
-.top-nav__menu a {
-  font-size: 0.9em;
-  color: #d0271a; }
+.hamburger:focus {
+  outline: thin dashed #d0271a; }
 
 @media (max-width: 700px) {
-  .top-nav__menu {
-    display: none; } }
+  .top-nav__menu ul {
+    display: none; }
+  .top-nav__menu button {
+    display: block; } }
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible; }
+  .hamburger:hover {
+    opacity: 0.7; }
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative; }
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px; }
+  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+    width: 40px;
+    height: 4px;
+    background-color: #d0271a;
+    border-radius: 4px;
+    position: absolute;
+    transition-property: transform;
+    transition-duration: 0.15s;
+    transition-timing-function: ease; }
+  .hamburger-inner::before, .hamburger-inner::after {
+    content: "";
+    display: block; }
+  .hamburger-inner::before {
+    top: -10px; }
+  .hamburger-inner::after {
+    bottom: -10px; }
+
+/*
+   * 3DX
+   */
+.hamburger--3dx .hamburger-box {
+  perspective: 80px; }
+
+.hamburger--3dx .hamburger-inner {
+  transition: transform 0.15s cubic-bezier(0.645, 0.045, 0.355, 1), background-color 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+  .hamburger--3dx .hamburger-inner::before, .hamburger--3dx .hamburger-inner::after {
+    transition: transform 0s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1); }
+
+.hamburger--3dx.is-active .hamburger-inner {
+  background-color: transparent;
+  transform: rotateY(180deg); }
+  .hamburger--3dx.is-active .hamburger-inner::before {
+    transform: translate3d(0, 10px, 0) rotate(45deg); }
+  .hamburger--3dx.is-active .hamburger-inner::after {
+    transform: translate3d(0, -10px, 0) rotate(-45deg); }

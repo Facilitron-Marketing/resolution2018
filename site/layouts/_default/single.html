@@ -3,7 +3,9 @@
   {{ partial "head" . }}
   <body>
     {{ partial "top-nav" . }}
-
+    <main>
+      {{ .Content }}
+    </main>
     {{ partial "footer" . }}
     <script charset="utf-8">
       console.log('_default/baseof.html');

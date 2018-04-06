@@ -1,10 +1,10 @@
 <footer>
   <div class="footer__follow">
     <h3>follow:</h3>
-    <img src="/img/icon-fb.svg" alt="Facebook"/>
-    <img src="/img/icon-li.svg" alt="LinkedIn"/>
-    <img src="/img/icon-insta.svg" alt="Instagram"/>
-    <img src="/img/icon-tw.svg" alt="Twitter"/>
+    <a href="https://www.facebook.com/resolutionathens"><img src="/img/icon-fb.svg" alt="Facebook"/></a>
+    <a href="https://www.linkedin.com/company/resolution-athens/"><img src="/img/icon-li.svg" alt="LinkedIn"/></a>
+    <a href="https://www.instagram.com/resolutionathens/"><img src="/img/icon-insta.svg" alt="Instagram"/></a>
+    <a href="https://twitter.com/ResolutionATH"><img src="/img/icon-tw.svg" alt="Twitter"/></a>
   </div>
   <div class="footer__connect">
     <h3>connect:</h3>
@@ -14,8 +14,8 @@
   </div>
   <div class="footer__about">
     <h3>about:</h3>
-    <p><a href="/careers">careers</a></p>
-    <p><a href="/contact">contact</a></p>
+    <p><a class="typeform-share link" href="https://resolutionathens.typeform.com/to/QXSIuR" data-mode="drawer_right" data-hide-headers=true data-hide-footer=true target="_blank">careers</a></p>
+    <p><a class="typeform-share link" href="https://resolutionathens.typeform.com/to/ifKcou" data-mode="drawer_right" data-hide-headers=true data-hide-footer=true target="_blank">contact</a></p>
     <p><a href="/mission">mission</a></p>
   </div>
   <div class="footer__resources">
@@ -26,15 +26,17 @@
   </div>
 </footer>
 <div class="footer__copyright">
-  <p>copyright &copy;2018 <a href="https://resolutionathens.com">resolution</a></p>
+  <p>copyright &copy;{{ .Date.Format "2006" }} <a href="https://resolutionathens.com">resolution</a></p>
 </div>
+
+<!-- typeform -->
+<script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm_share", b="https://embed.typeform.com/"; if(!gi.call(d,id)){ js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TweenLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.4/TimelineLite.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/plugins/CSSPlugin.min.js"></script>
-<script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/DrawSVGPlugin.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script>
-<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.js"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script> -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
 <script src="/app.js"></script>

@@ -37,7 +37,7 @@ Your targeting stinks because your strategy stinks. Many businesses don't have a
 
 Your target market includes the following segmentations: geographic, demographic, psychographic, behavioral, and product-related. Getting to know and understand your target market across these categories will give you the tools that you need to connect with them. Explore each of these characteristics and build user stories from them, then use those user stories as you craft your message.
 
-> The aim of marketing is to know and understand the customer so well the product or service fits him and sells itself. – Peter Drucker
+> The aim of marketing is to know and understand the customer so well the product or service fits him and sells itself. &mdash; Peter Drucker
 
 Your geographic market can be local, regional, national, or worldwide. Your demographic market narrows their age and gender as well as their level of education and income. Your target's lifestyle, attitudes, beliefs, and values make up their psychographics. Behavioral segmentation is determining habits and loyalty by gathering data on the way your audience interacts with your company. Finally, product-related segmentation defines your audience by what they buy and the brands to which they are loyal.
 
@@ -51,7 +51,9 @@ There are many options out there for any sized company, from mom and pop to ente
 
 Whichever you choose, spend time getting to know it. Go through the training and make a point to use it daily. It will pay off.
 
-Bonus: The internet is not the Yellow Pages. Back in the days when the Yellow Pages were a relevant thing, business owners made it a priority to get their name listed. The ambitious (or well funded) businesses bought ad space. And the cream of the crop had ads that were full-page and four-color. And that was glorious.
+### Bonus: The internet is not the Yellow Pages.
+
+Back in the days when the Yellow Pages were a relevant thing, business owners made it a priority to get their name listed. The ambitious (or well funded) businesses bought ad space. And the cream of the crop had ads that were full-page and four-color. And that was glorious.
 
 For many business owners, this was their primary or only marketing expense. Everyone received a fat new copy of the Yellow Pages once a year in a plastic bag on their driveway. And everyone used it. Without the internet, how else were you going to find a place that had take-out Mexican or a plumber that worked on Saturday?
 
