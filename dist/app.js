@@ -140,7 +140,7 @@ function scrollHome() {
 
   //logo drawing
   var logoTween = new TimelineLite();
-  logoTween.from("#logo-r", 0.25, { scale: 0.25, transformOrigin: "center" }, "+=0.2").from("#logo-e", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-s", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-o", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-l", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-u", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-t", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-i", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-o2", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-n", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1");
+  logoTween.from("#logo-r", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "+=0.2").from("#logo-e", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-s", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-o", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-l", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-u", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-t", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-i", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-o2", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1").from("#logo-n", 0.25, { scale: 0.25, opacity: 0, transformOrigin: "center" }, "-=0.1");
 
   // logo scrolling
   new ScrollMagic.Scene({
@@ -149,7 +149,6 @@ function scrollHome() {
 
   // who-we-are
   var whoTween = new TimelineLite();
-  var whoHeight = document.getElementById("who-we-are").clientHeight;
   whoTween.from(".home__who-we-are--text", 0.75, { rotation: 2 }).from("#ian", 0.75, { scale: 0.95, rotation: -2 }).from("#taylor", 0.75, { scale: 0.95, rotation: 1.2 });
 
   new ScrollMagic.Scene({
@@ -157,8 +156,18 @@ function scrollHome() {
     duration: 200
   }).setTween(whoTween).addTo(controller);
 
+  //testimonial
+
   // what-we-do
-  tweenFromLeft("what-we-do", controller);
+  tweenFromRight("what-we-do--header", controller);
+  tweenFromLeft("what-we-do--strategy", controller);
+  var whatTween = new TimelineLite();
+  whatTween.from(".what-we-do--section", 0.75, { scale: 0.25, opacity: 0, transformOrigin: "center" });
+
+  new ScrollMagic.Scene({
+    triggerElement: ".what-we-do--section",
+    duration: 200
+  }).setTween(whatTween).addTo(controller);
 
   // why-it-matters
   tweenFromRight("why-it-matters", controller);

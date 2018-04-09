@@ -365,7 +365,10 @@ footer {
   margin: 10px; }
 
 .home__what-we-do {
-  text-align: center; }
+  display: grid;
+  grid-template-columns: repeat(2, minmax(400px, 1fr));
+  grid-template-areas: "header header" "strategy strategy" "identity web" "cta cta";
+  grid-gap: 2em; }
 
 .home__what-we-do--card-container {
   display: grid;
@@ -389,6 +392,30 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center; } }
+
+.what-we-do--header {
+  grid-area: header;
+  align-items: center;
+  text-align: center; }
+
+.what-we-do--section {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(150px, 1fr));
+  grid-gap: 1em;
+  align-items: center;
+  justify-items: center; }
+  .what-we-do--section h3 {
+    grid-column: span 2; }
+  .what-we-do--section img {
+    display: block;
+    max-width: 150px; }
+
+.what-we-do--strategy {
+  grid-area: strategy; }
+
+.what-we-do--cta {
+  text-align: center;
+  grid-area: cta; }
 
 main {
   padding-left: 1em;
