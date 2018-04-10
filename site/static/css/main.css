@@ -179,6 +179,9 @@ main {
 
 section {
   margin: 10em auto; }
+  @media (max-width: 560px) {
+    section {
+      margin: 3em auto; } }
 
 .blog-header {
   margin: 10em auto;
@@ -193,6 +196,11 @@ section {
   grid-template-columns: repeat(3, 1fr);
   margin: 10em auto;
   max-width: 1000px; }
+  @media (max-width: 900px) {
+    .blog-container {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap; } }
 
 .blog-card h3 {
   margin-top: 0; }
@@ -225,12 +233,21 @@ section {
   font-weight: 500;
   text-transform: uppercase; }
 
+@media (max-width: 900px) {
+  .blog-card {
+    margin: 1.5em auto; }
+  .blog-card__image img {
+    max-width: 300px !important; } }
+
 .blog-content {
   margin: 5em auto;
   max-width: 800px; }
 
 .blog__header-img {
   margin: 2em auto; }
+
+.blog-content img {
+  max-width: 100%; }
 
 .who-header {
   width: 80%;
@@ -284,31 +301,19 @@ section {
     .work-container__item--wide {
       grid-column: span 2; }
 
-.web-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(max-content, 1fr));
-  margin: 3em auto; }
-  .web-container__header {
-    margin-bottom: 3em;
-    text-align: center;
-    grid-column: span 2; }
-    .web-container__header h2 {
-      text-transform: uppercase; }
-  .web-container__item {
-    padding: 3em 0; }
+@media (max-width: 1000px) {
+  .work-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  .work-container img {
+    max-width: 420px; } }
 
-.identity-container {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(max-content, 1fr));
-  margin: 3em auto; }
-  .identity-container__header {
-    margin-bottom: 3em;
-    text-align: center;
-    grid-column: span 2; }
-    .identity-container__header h2 {
-      text-transform: uppercase; }
-  .identity-container__item {
-    padding: 3em 0; }
+@media (max-width: 460px) {
+  .work-container__item {
+    padding: 1em 0; }
+  .work-container img {
+    max-width: 300px; } }
 
 .res-btn {
   font-weight: 300;
@@ -389,6 +394,10 @@ footer {
 
 @media (max-width: 1000px) {
   .home__what-we-do--card-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+  .home__what-we-do {
     display: flex;
     flex-direction: column;
     align-items: center; } }
@@ -480,9 +489,8 @@ main {
   align-items: center;
   display: flex;
   flex-direction: column;
-  height: 50vh;
   justify-content: center;
-  margin: 0 auto;
+  margin: 10vh auto;
   max-width: 1000px;
   padding: 0 1em;
   text-align: center; }

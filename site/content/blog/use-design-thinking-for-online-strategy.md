@@ -1,6 +1,6 @@
 ---
 title: "Design Thinking for Online Strategy"
-date: 2018-02-16T12:53:05-05:00
+date: 2017-02-16
 header_image: "design-thinking-header.png"
 teaser_image: "design-thinking-teaser.png"
 square_image: "design-thinking-square.png"

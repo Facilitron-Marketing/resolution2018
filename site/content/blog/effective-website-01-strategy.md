@@ -1,10 +1,10 @@
 ---
 title: "Effective Websites: 01 Strategy"
-date: 2018-03-02T09:59:15-05:00
-header_image: 'after-effects-header.png'
-teaser_image: 'after-effects-teaser.png'
+date: 2017-05-17
+header_image: 'development-header.png'
+teaser_image: 'development-teaser.png'
 square_image: 'after-effects-square.png'
-description: In which we explain everything about an effective business website. Part 1 of 5.
+description: In which we explain everything about an effective business website. Part 1 of 4.
 ---
 
 If your website isn't selling your business, it's likely that you launched it without a strategy. This isn't your fault. Chances are that no one told you that you needed a strategy, they just told you that you needed a website.

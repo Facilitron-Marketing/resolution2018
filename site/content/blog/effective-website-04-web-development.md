@@ -1,10 +1,10 @@
 ---
 title: "Effective Websites: 04 Web Development"
-date: 2018-03-02T09:59:15-05:00
-header_image: 'after-effects-header.png'
-teaser_image: 'after-effects-teaser.png'
+date: 2017-05-23
+header_image: 'development-header.png'
+teaser_image: 'development-teaser.png'
 square_image: 'after-effects-square.png'
-description: In which we explain everything about an effective business website. Part 4 of 5.
+description: In which we explain everything about an effective business website. Part 4 of 4.
 ---
 
 We started this series because we’ve found that most websites stink. They stink because they don’t generate business. We’re on a mission to fix that.

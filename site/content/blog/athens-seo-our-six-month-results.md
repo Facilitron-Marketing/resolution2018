@@ -1,6 +1,6 @@
 ---
 title: "How we nailed Athens SEO in 6 months"
-date: 2018-02-14T09:23:36-05:00
+date: 2017-08-30
 header_image: 'athens-seo-header.png'
 teaser_image: 'athens-seo-teaser.png'
 square_image: 'athens-seo-square.png'
@@ -23,7 +23,13 @@ Our target keywords became “brand strategy athens”, “graphic design athens
 
 It felt ambitious to target all six keywords at once. Could we make it to the first page of Google? Could we do it within six months?
 
-As it turns out, yes, we could, on both counts. Here are screenshots of our results as of August 30, 2017, click each to see the full image.
+As it turns out, yes, we could, on both counts. Here are screenshots of our results as of August 30, 2017.
+
+![Graphic Design Athens](/img/blog/seo-graphic-design-athens.png)
+*Graphic design Athens*
+
+![Design Agency Athens](/img/blog/seo-design-agency-athens.png)
+*Design agency Athens*
 
 ## Our SEO process
 Getting these results was time consuming and took a lot of effort, but the process itself was simple. We used no black magic, just old-fashioned elbow-grease.
@@ -47,4 +53,3 @@ Is Resolution the best web design and development firm in Athens? That’s our g
 As always, if you are looking to elevate your business and achieve better results from your marketing and advertising, give us a call.
 
 Until next time, we love you! &#128140;
-

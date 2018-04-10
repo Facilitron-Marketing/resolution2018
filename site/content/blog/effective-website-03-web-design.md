@@ -1,10 +1,10 @@
 ---
 title: "Effective Websites: 03 Web Design"
-date: 2018-03-02T09:59:15-05:00
-header_image: 'after-effects-header.png'
-teaser_image: 'after-effects-teaser.png'
+date: 2017-05-22
+header_image: 'development-header.png'
+teaser_image: 'development-teaser.png'
 square_image: 'after-effects-square.png'
-description: In which we explain everything about an effective business website. Part 3 of 5.
+description: In which we explain everything about an effective business website. Part 3 of 4.
 ---
 
 Hello and welcome to part three in our five part series on effective business websites. We’re glad you’re here.

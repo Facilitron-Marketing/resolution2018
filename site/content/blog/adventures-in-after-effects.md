@@ -1,6 +1,6 @@
 ---
 title: "Adventures in After Effects"
-date: 2018-02-16T13:27:46-05:00
+date: 2017-02-18
 header_image: 'after-effects-header.png'
 teaser_image: 'after-effects-teaser.png'
 square_image: 'after-effects-square.png'

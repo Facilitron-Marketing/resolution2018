@@ -1,6 +1,6 @@
 ---
 title: "Social Media vs Traditional Advertising"
-date: 2018-02-16T13:32:19-05:00
+date: 2017-03-01
 header_image: 'social-media-header.png'
 teaser_image: 'social-media-teaser.png'
 square_image: 'social-media-teaser-square.png'

@@ -12,6 +12,10 @@
   grid-template-columns: repeat(3, 1fr)
   margin: 10em auto
   max-width: 1000px
+  @media(max-width: 900px)
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
 
 .blog-card
   h3
@@ -44,6 +48,12 @@
   font-weight: 500
   text-transform: uppercase
 
+@media(max-width: 900px)
+  .blog-card
+    margin: 1.5em auto
+  .blog-card__image img
+    max-width: 300px !important
+
 // single
 
 .blog-content
@@ -53,3 +63,5 @@
 .blog__header-img
   margin: 2em auto
 
+.blog-content img
+  max-width: 100%

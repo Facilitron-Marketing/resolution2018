@@ -14,29 +14,16 @@
     &--wide
       grid-column: span 2
 
-.web-container
-  display: grid
-  grid-template-columns: repeat(2, minmax(max-content, 1fr))
-  margin: 3em auto
-  &__header
-    margin-bottom: 3em
-    text-align: center
-    grid-column: span 2
-    h2
-      text-transform: uppercase
-  &__item
-    padding: 3em 0
+@media(max-width: 1000px)
+  .work-container
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+  .work-container img
+    max-width: 420px
 
-.identity-container
-  display: grid
-  grid-template-columns: repeat(2, minmax(max-content, 1fr))
-  margin: 3em auto
-  &__header
-    margin-bottom: 3em
-    text-align: center
-    grid-column: span 2
-    h2
-      text-transform: uppercase
-  &__item
-    padding: 3em 0
-
+@media(max-width: 460px)
+  .work-container__item
+    padding: 1em 0
+  .work-container img
+    max-width: 300px
