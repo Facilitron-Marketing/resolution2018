@@ -75,9 +75,10 @@ function scrollHome() {
 
   // logo scrolling
   new ScrollMagic.Scene({
-    triggerElement: ".home__kvp"
+    triggerElement: ".home__kvp",
+    offset: 250
   })
-  .setTween("#res-logo", 1, {scale: 0.5})
+  .setTween("#res-logo", 1, {scale: 0.75})
   .addTo(controller);
 
   // who-we-are
@@ -94,6 +95,7 @@ function scrollHome() {
   .addTo(controller);
 
   //testimonial
+  tweenFromLeft("testimonial", controller);
 
   // what-we-do
   tweenFromRight("what-we-do--header", controller);
@@ -107,6 +109,9 @@ function scrollHome() {
   })
   .setTween(whatTween)
   .addTo(controller);
+
+  // how-we-differ
+  tweenFromLeft("how-we-differ", controller);
 
   // why-it-matters
   tweenFromRight("why-it-matters", controller);

@@ -144,8 +144,9 @@ function scrollHome() {
 
   // logo scrolling
   new ScrollMagic.Scene({
-    triggerElement: ".home__kvp"
-  }).setTween("#res-logo", 1, { scale: 0.5 }).addTo(controller);
+    triggerElement: ".home__kvp",
+    offset: 250
+  }).setTween("#res-logo", 1, { scale: 0.75 }).addTo(controller);
 
   // who-we-are
   var whoTween = new TimelineLite();
@@ -157,6 +158,7 @@ function scrollHome() {
   }).setTween(whoTween).addTo(controller);
 
   //testimonial
+  tweenFromLeft("testimonial", controller);
 
   // what-we-do
   tweenFromRight("what-we-do--header", controller);
@@ -168,6 +170,9 @@ function scrollHome() {
     triggerElement: ".what-we-do--section",
     duration: 200
   }).setTween(whatTween).addTo(controller);
+
+  // how-we-differ
+  tweenFromLeft("how-we-differ", controller);
 
   // why-it-matters
   tweenFromRight("why-it-matters", controller);

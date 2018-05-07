@@ -38,11 +38,6 @@
   </url>
   
   <url>
-    <loc>/blog/which-cms-should-you-choose/</loc>
-    <lastmod>2017-03-04T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>/blog/social-media-vs-traditional-advertising/</loc>
     <lastmod>2017-03-01T00:00:00+00:00</lastmod>
   </url>
@@ -63,8 +58,13 @@
   </url>
   
   <url>
-    <loc>/blog/</loc>
-    <lastmod>2017-08-30T00:00:00+00:00</lastmod>
+    <loc>/blog/athens-is-indie/</loc>
+    <lastmod>2017-02-09T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/blog/importance-of-branding/</loc>
+    <lastmod>2017-01-29T00:00:00+00:00</lastmod>
   </url>
   
   <url>
@@ -73,15 +73,20 @@
   </url>
   
   <url>
-    <loc>/clients/</loc>
-  </url>
-  
-  <url>
     <loc>/mission/</loc>
   </url>
   
   <url>
+    <loc>/blog/</loc>
+    <lastmod>2017-08-30T00:00:00+00:00</lastmod>
+  </url>
+  
+  <url>
     <loc>/our-work/</loc>
+  </url>
+  
+  <url>
+    <loc>/clients/</loc>
   </url>
   
   <url>

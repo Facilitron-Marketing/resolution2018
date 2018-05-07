@@ -3,6 +3,7 @@ title: "Mission"
 page: "/mission"
 layout: single
 description: "Resolution mission and values."
+og_img: "resolution-og.jpg"
 ---
 
 ### We are Proud to Represent Resolution

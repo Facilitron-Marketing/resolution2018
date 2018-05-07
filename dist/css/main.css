@@ -290,6 +290,8 @@ section {
   grid-template-columns: repeat(2, minmax(max-content, 1fr));
   grid-gap: 1em;
   margin: 3em auto; }
+  .work-container figure {
+    text-align: center; }
   .work-container__header {
     margin-bottom: 3em;
     text-align: center;
